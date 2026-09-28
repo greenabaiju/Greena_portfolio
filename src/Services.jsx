@@ -1,83 +1,63 @@
+
 import React from "react";
 import "./service.css";
 
+import {
+  FaCode,
+  FaServer,
+  FaLayerGroup,
+  FaWordpress
+} from "react-icons/fa";
+
 const Services = () => {
   return (
-    <section className="services" id="expertise">
-      <div className="heading">
+    <section className="services">
+
+      <div className="service-heading">
         <span>WHAT I DO</span>
-
-        <h2>
-          My <b>Expertise</b>
-        </h2>
-
-        <p>I create modern and responsive websites and web applications.</p>
+        <h2>My <b>Expertise</b></h2>
+        <p>I create modern and responsive web applications.</p>
       </div>
 
-      <div className="servicecs">
-        <div className="servicec card-1">
-          <span className="number">01</span>
+      <div className="service-grid">
 
+        <div className="service-card">
+          <FaCode />
+          <span>01</span>
           <h3>Frontend Development</h3>
-          <p>
-            I create responsive and interactive websites using HTML, CSS,
-            JavaScript and React.
-          </p>
-
-          <span className="tags">HTML </span>
-          <span className="tags">CSS </span>
-          <span className="tags">Javascript </span>
-          <span className="tags">React </span>
+          <p>I create responsive websites using HTML, CSS, JavaScript and React.</p>
+          <small>HTML · CSS · JavaScript · React</small>
         </div>
 
-        <div className="servicec card-2">
-          <span className="number">02</span>
-
+        <div className="service-card">
+          <FaServer />
+          <span>02</span>
           <h3>Backend Development</h3>
-
-          <p>
-            I develop backend applications and APIs using Node.js, Express and
-            MongoDB.
-          </p>
-          <span className="tags"> Node.js </span>
-          <span className="tags">Express </span>
-          <span className="tags">REST API </span>
-          <span className="tags">MongoDB</span>
+          <p>I develop backend applications using Node.js, Express and MongoDB.</p>
+          <small>Node.js · Express · MongoDB</small>
         </div>
 
-        <div className="servicec card-3">
-          <span className="number">03</span>
-
+        <div className="service-card">
+          <FaLayerGroup />
+          <span>03</span>
           <h3>Full Stack Development</h3>
-
           <p>I build complete web applications using the MERN stack.</p>
-          <span className="tags">HTML </span>
-          <span className="tags">CSS </span>
-          <span className="tags">Javascript </span>
-          <span className="tags">React </span>
-          <span className="tags"> Node.js </span>
-          <span className="tags">Express </span>
-          <span className="tags">REST API </span>
-          <span className="tags">MongoDB</span>
+          <small>React · Node.js · Express · MongoDB</small>
         </div>
 
-        <div className="servicec card-4">
-          <span className="number">04</span>
-
+        <div className="service-card">
+          <FaWordpress />
+          <span>04</span>
           <h3>WordPress Development</h3>
-
-          <p>
-            I create and customize responsive WordPress websites for businesses
-            and personal websites.
-          </p>
-
-          <span className="tags">Wordpress </span>
-          <span className="tags">CSS </span>
-          <span className="tags">HTML </span>
+          <p>I create and customize responsive WordPress websites.</p>
+          <small>WordPress · HTML · CSS</small>
         </div>
+
       </div>
+
     </section>
   );
 };
 
 export default Services;
+

@@ -1,26 +1,35 @@
+import "./App.css";
 
-import './App.css'
-import Experience from './Experience'
-import Footer from './Footer'
-import Home from './Home'
-import Navbar from './Navbar'
-import Projects from './Projects'
-import Services from './Services'
-import Skill from './Skill'
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./Navbar";
+import Home from "./Home";
+import About from "./About";
+import Footer from "./Footer";
+import Skill from "./Skill";
+import Services from "./Services";
+import Projects from "./Projects";
+import Experience from "./Experience";
+import Contact from "./Contact";
 
 function App() {
-  
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <Skill/>
-      <Services/>
-      <Projects/>
-       <Experience/>
-       <Footer/>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skill />} />
+        <Route path="/service" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+         <Route path="/experience" element={<Experience />} />
+         <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,89 +1,105 @@
-.mainc {
-  padding: 100px 120px;
+.skill-page {
+  min-height: 100vh;
+  padding: 100px 10%;
   background: #0b1511;
   color: white;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.heading span {
+.about-title {
   color: #00c896;
   font-size: 12px;
   letter-spacing: 2px;
 }
 
-.heading h2 {
+.skill-left h2 {
   font-size: 45px;
-  margin: 15px 0;
+  line-height: 1.2;
+  margin: 15px 0 25px;
 }
 
-.heading h2 b {
+.skill-left h2 b {
   color: #00c896;
 }
 
-.heading p {
-  color: #b8c2be;
-  margin-bottom: 40px;
+.skill-left p {
+  color: #aebbb5;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  max-width: 500px;
 }
 
-.skills {
+.skill-right {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
 }
 
-.skill {
-  padding: 25px;
+.skill-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 22px;
+
   background: #151a17;
   border: 1px solid #29332f;
-  border-radius: 15px;
+  border-radius: 14px;
+
+  transition: 0.3s;
 }
 
-.skill:hover {
+.skill-box:hover {
+  transform: translateY(-5px);
   border-color: #00c896;
 }
 
-.icon {
-  width: 55px;
-  height: 55px;
-  margin-bottom: 10px;
-  background-color: #0b0f0d;
+.skill-box > svg {
+  font-size: 35px;
   color: #00c896;
-  border: 1px solid #29332f;
-  border-radius: 10px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 55px;
-}
-.skill h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
 }
 
-.skill p {
-  color: #b8c2be;
+.skill-box h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
 }
 
+.skill-box p {
+  margin: 0;
+  color: #8f9d97;
+  font-size: 13px;
+}
 
 @media (max-width: 900px) {
-  .mainc {
+  .skill-page {
+    grid-template-columns: 1fr;
     padding: 80px 50px;
   }
 
-  .skills {
-    grid-template-columns: repeat(2, 1fr);
+  .skill-left {
+    text-align: center;
+  }
+
+  .skill-left p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-
 @media (max-width: 600px) {
-  .mainc {
+  .skill-page {
     padding: 60px 20px;
   }
 
-  .skills {
-    grid-template-columns: 1fr;
+  .skill-left h2 {
+    font-size: 35px;
   }
 
-  .heading h2 {
-    font-size: 35px;
+  .skill-right {
+    grid-template-columns: 1fr;
   }
 }

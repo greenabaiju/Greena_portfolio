@@ -14,11 +14,13 @@ const Footer = () => {
       </p>
 
       <div className="footers">
-        <a href="https://github.com/greenabaiju">
+        <a href="https://github.com/greenabaiju" target="_blank"
+              rel="noreferrer">
           <FaGithub />
         </a>
 
-        <a href="https://www.linkedin.com/in/greena-baiju">
+        <a href="https://www.linkedin.com/in/greena-baiju" target="_blank"
+              rel="noreferrer">
           <FaLinkedinIn />
         </a>
 
@@ -31,12 +33,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="footerl">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+     
 
       <div className="footerb">
         <p>© 2026 Greena Baiju. All rights reserved.</p>
