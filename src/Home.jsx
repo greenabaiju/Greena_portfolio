@@ -21,7 +21,7 @@ import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
 import { FaLink } from "react-icons/fa6";
 import { BiArrowToBottom } from "react-icons/bi";
 
-function Home() {
+const Home=()=> {
   return (
     <>
       <section className="home" id="home">
