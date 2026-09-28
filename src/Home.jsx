@@ -88,7 +88,7 @@ const Home=()=> {
             </h2>
 
             <p>
-              I'm Greena Baiju, a Full Stack Developer with 5+ years of
+              I'm Greena Baiju, a Full Stack Developer with 4+ years of
               experience in web design and development. I have experience
               working with HTML, CSS, JavaScript, Bootstrap, WordPress and
               Joomla.
