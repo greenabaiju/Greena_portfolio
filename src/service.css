@@ -1,0 +1,108 @@
+.services {
+  padding: 60px 120px;
+  background: #111116;
+  color: white;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.heading span {
+  color: #00c896;
+  font-size: 12px;
+  
+}
+
+.heading h2 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.heading h2 b {
+  color: #00c896;
+}
+
+.heading p {
+  color: #b8c2be;
+  line-height: 1.6;
+}
+
+.servicec {
+  position: sticky;
+  height: 400px;
+  margin-bottom: 80px;
+  padding: 40px;
+  background: #151a17;
+  border: 1px solid #29332f;
+  border-radius: 15px;
+}
+
+.card-1 {
+  top: 100px;
+}
+
+.card-2 {
+  top: 120px;
+}
+
+.card-3 {
+  top: 140px;
+}
+
+.card-4 {
+  top: 160px;
+}
+
+.number {
+  color: #00c896;
+  font-size: 14px;
+}
+
+.servicec h3 {
+  font-size: 40px;
+  margin: 25px 0;
+}
+
+.servicec p {
+  max-width: 600px;
+  color: #b8c2be;
+  line-height: 1.7;
+}
+
+.tags {
+  color: #00c896;
+  border: 1px solid #00c896;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.tags:hover {
+  background-color: #00c896;
+  color: white;
+  border: 1px solid #000000;
+}
+.servicec:hover {
+  border-color: #00c896;
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 60px 20px;
+  }
+
+  .heading h2 {
+    font-size: 35px;
+  }
+
+  .servicec {
+    height: 350px;
+    padding: 25px;
+  }
+
+  .servicec h3 {
+    font-size: 30px;
+  }
+}

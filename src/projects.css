@@ -1,0 +1,147 @@
+.projects {
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #0b0f0d;
+  color: white;
+}
+
+.htext {
+  width: 500px;
+}
+
+.projects span {
+  color: #00c896;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.projects h2 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.projects h2 b {
+  color: #00c896;
+}
+
+.para1 {
+  color: #b8c2be;
+  line-height: 1.7;
+}
+
+.htext a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #00c896;
+  color: #0b0f0d;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.htext a:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid #00c896;
+}
+
+.right {
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.move {
+  animation: scrollUp 20s linear infinite;
+}
+
+.card1 {
+  width: 700px;
+  height: 350px;
+  padding: 10px;
+  margin: auto;
+  background: #151a17;
+  border: 1px solid #29332f;
+  border-radius: 15px;
+}
+
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text {
+  width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  background: #151a17;
+  border: 1px solid #29332f;
+  border-radius: 12px;
+}
+
+.text:hover {
+  border-color: #00c896;
+}
+
+.text h3 {
+  margin: 10px 0;
+}
+
+.text p {
+  color: #b8c2be;
+  font-size: 13px;
+}
+
+.text a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: transparent;
+  color: #00c896;
+  border: 1px solid #00c896;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+
+.text a:hover {
+  background: #00c896;
+  color: black;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(-900px);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .projects h2 {
+    font-size: 35px;
+  }
+
+  .right {
+    width: 100%;
+  }
+  .htext {
+    width: 300px;
+  }
+  .card1 {
+    width: 300px;
+  }
+  .text {
+    width: 300px;
+  }
+}

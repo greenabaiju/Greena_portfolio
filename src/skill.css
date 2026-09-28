@@ -1,0 +1,89 @@
+.mainc {
+  padding: 100px 120px;
+  background: #0b1511;
+  color: white;
+}
+
+.heading span {
+  color: #00c896;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.heading h2 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.heading h2 b {
+  color: #00c896;
+}
+
+.heading p {
+  color: #b8c2be;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  padding: 25px;
+  background: #151a17;
+  border: 1px solid #29332f;
+  border-radius: 15px;
+}
+
+.skill:hover {
+  border-color: #00c896;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  background-color: #0b0f0d;
+  color: #00c896;
+  border: 1px solid #29332f;
+  border-radius: 10px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 55px;
+}
+.skill h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: #b8c2be;
+}
+
+
+@media (max-width: 900px) {
+  .mainc {
+    padding: 80px 50px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .mainc {
+    padding: 60px 20px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2 {
+    font-size: 35px;
+  }
+}
