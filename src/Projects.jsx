@@ -3,225 +3,128 @@ import { FaLink } from "react-icons/fa6";
 import "./projects.css";
 
 const Projects = () => {
+  const projects = [
+    {
+  title: "Resume Builder",
+  image: "/project7.png",
+  description:
+    "A responsive Resume Builder application that allows users to create, edit and manage professional resumes. Built using React.js, Material UI and REST API integration with json-server.",
+  tags: ["React", "JavaScript", "Material UI", "REST API", "JSON Server"],
+  live: "https://resume-builder-fe-pi.vercel.app/",
+  github: "https://github.com/greenabaiju/resumeBuilder_fe",
+  linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7521129242764496896/"
+},
+    {
+  title: "Rentelle – Fashion Rental System",
+  image: "/project6.png",
+  description:
+    "A responsive fashion rental website developed using React. It helps manage dress collections, inventory and customer records with separate user and admin features.",
+  tags: ["React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+  live: "https://mini-project-rentelle.vercel.app/",
+  github: "https://github.com/greenabaiju/MiniProject_Rentelle",
+   linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7516828022801330179/"
+},
+    {
+      title: "ShopNest – React E-commerce Website",
+      image: "/project5.png",
+      description:
+        "A responsive React e-commerce website featuring dynamic products fetched from the Fake Store API, product categories, featured products and special offers.",
+      tags: [
+        "React",
+        "JavaScript",
+        "React Router",
+        "REST API",
+        "Fetch API",
+        "CSS",
+      ],
+      live: "https://shopnest-react-fetch-api.vercel.app/",
+      github: "https://github.com/greenabaiju/shopnest-react-fetch-api",
+    },
+    {
+      title: "React Website",
+      image: "/project4.png",
+      description:
+        "A modern React website built using reusable components and JSX. It demonstrates components, props, state, events and dynamic UI.",
+      tags: ["React", "JavaScript", "CSS"],
+      live: "https://react-website-bryusygbf-abcd-a874.vercel.app/",
+      github: "https://github.com/greenabaiju/react_website.git",
+    },
+    {
+      title: "Swiggy Homepage Clone",
+      image: "/project1.png",
+      description:
+        "A responsive food delivery website clone developed using HTML5, CSS3 and Bootstrap 5.",
+      tags: ["HTML", "CSS", "Bootstrap"],
+      live: "https://greenabaiju.github.io/swiggy-homepage-clone/",
+      github: "https://github.com/greenabaiju/swiggy-homepage-clone.git",
+      linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7492267012891742211/",
+    },
+    {
+      title: "HTML & CSS Project",
+      image: "/project2.png",
+      description:
+        "A modern web interface created using HTML5 and CSS3 with responsive layouts, animations and hover effects.",
+      tags: ["HTML", "CSS", "Animation"],
+      live: "https://greenabaiju.github.io/Task-html-css-animation/",
+      github: "https://github.com/greenabaiju/Task-html-css-animation",
+      linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7482632450255552514/",
+    },
+    {
+      title: "CSS Learning Website",
+      image: "/project3.png",
+      description:
+        "A responsive educational website explaining CSS fundamentals, selectors, styling, Flexbox and the CSS Box Model.",
+      tags: ["HTML", "CSS", "Flexbox"],
+      live: "https://greenabaiju.github.io/CSS_website/index.html",
+      github: "https://github.com/greenabaiju/CSS_website.git",
+      linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7478710474738663424/",
+    },
+  ];
+
   return (
     <section className="projects">
-
-      <div className="project-heading">
-        <span>MY PROJECTS</span>
-
-        <h2>
-          My Recent <b>Work</b>
-        </h2>
-
-        <p>
-          Explore some of my recent web development projects built using
-          modern technologies and responsive designs.
-        </p>
-      </div>
-
       <div className="project-grid">
-
-        <div className="project-card">
-
-          <div className="project-image">
-            <img src="/project4.png" alt="React Website" />
-          </div>
-
-          <div className="project-content">
-            <span>01</span>
-
-            <h3>React Website</h3>
-
-            <p>
-              A modern React website built using reusable components and JSX.
-              It demonstrates components, props, state, events and dynamic UI.
-            </p>
-
-            <div className="project-tags">
-              <span>React</span>
-              <span>JavaScript</span>
-              <span>CSS</span>
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
             </div>
 
-            <div className="project-links">
-              <a
-                href="https://react-website-bryusygbf-abcd-a874.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLink />
-              </a>
+            <div className="project-content">
+              <h3>{project.title}</h3>
 
-              <a
-                href="https://github.com/greenabaiju/react_website.git"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
+              <p>{project.description}</p>
+
+              <div className="project-tags">
+                {project.tags.map((tag, i) => (
+                  <span key={i}>{tag}</span>
+                ))}
+              </div>
+
+              <div className="project-links">
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  <FaLink />
+                </a>
+
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  <FaGithub />
+                </a>
+
+                {project.linkedin && (
+                  <a href={project.linkedin} target="_blank" rel="noreferrer">
+                    <FaLinkedin />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
-
-        </div>
-
-
-        <div className="project-card">
-
-          <div className="project-image">
-            <img src="/project1.png" alt="Swiggy Homepage Clone" />
-          </div>
-
-          <div className="project-content">
-            <span>02</span>
-
-            <h3>Swiggy Homepage Clone</h3>
-
-            <p>
-              A responsive food delivery website clone developed using HTML5,
-              CSS3 and Bootstrap 5.
-            </p>
-
-            <div className="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-            </div>
-
-            <div className="project-links">
-              <a
-                href="https://greenabaiju.github.io/swiggy-homepage-clone/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLink />
-              </a>
-
-              <a
-                href="https://github.com/greenabaiju/swiggy-homepage-clone.git"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7492267012891742211/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div className="project-card">
-
-          <div className="project-image">
-            <img src="/project2.png" alt="HTML CSS Project" />
-          </div>
-
-          <div className="project-content">
-            <span>03</span>
-
-            <h3>HTML & CSS Project</h3>
-
-            <p>
-              A modern web interface created using HTML5 and CSS3 with
-              responsive layouts, animations and hover effects.
-            </p>
-
-            <div className="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Animation</span>
-            </div>
-
-            <div className="project-links">
-              <a
-                href="https://greenabaiju.github.io/Task-html-css-animation/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLink />
-              </a>
-
-              <a
-                href="https://github.com/greenabaiju/Task-html-css-animation"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7482632450255552514/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div className="project-card">
-
-          <div className="project-image">
-            <img src="/project3.png" alt="CSS Learning Website" />
-          </div>
-
-          <div className="project-content">
-            <span>04</span>
-
-            <h3>CSS Learning Website</h3>
-
-            <p>
-              A responsive educational website explaining CSS fundamentals,
-              selectors, styling, Flexbox and the CSS Box Model.
-            </p>
-
-            <div className="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Flexbox</span>
-            </div>
-
-            <div className="project-links">
-              <a
-                href="https://greenabaiju.github.io/CSS_website/index.html"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLink />
-              </a>
-
-              <a
-                href="https://github.com/greenabaiju/CSS_website.git"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7478710474738663424/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-          </div>
-
-        </div>
-
+        ))}
       </div>
-
     </section>
   );
 };

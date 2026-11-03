@@ -354,12 +354,39 @@ const Home=()=> {
 
         <div className="right">
           <div className="move">
+             <div className="card1">
+              <img src="/project5.png" alt="Rentelle Website" />
+            </div>
+
+            <div className="text">
+              
+              <h3>Rentelle – Fashion Rental Website (Frontend)</h3>
+              <p>
+               Developed a modern, responsive fashion rental website using React.js, JSX, and reusable components.
+              </p>
+
+              <a
+                href="https://mini-project-rentelle.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLink />
+              </a>
+
+              <a
+                href="https://github.com/greenabaiju/MiniProject_Rentelle.git"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+            </div>
             <div className="card1">
               <img src="/project4.png" alt="React Website" />
             </div>
 
             <div className="text">
-              <span>01</span>
+              
               <h3>React Website</h3>
               <p>
                 A modern React website built using reusable components and JSX.
@@ -387,7 +414,7 @@ const Home=()=> {
             </div>
 
             <div className="text">
-              <span>02</span>
+            
               <h3>Swiggy Homepage Clone</h3>
               <p>
                 A responsive food delivery website clone built using HTML5, CSS3
@@ -424,7 +451,7 @@ const Home=()=> {
             </div>
 
             <div className="text">
-              <span>03</span>
+             
               <h3>HTML & CSS Project</h3>
               <p>
                 A modern web interface built using HTML5 and CSS3 with
@@ -453,7 +480,7 @@ const Home=()=> {
             </div>
 
             <div className="text">
-              <span>04</span>
+              
               <h3>CSS Learning Website</h3>
               <p>
                 A responsive educational website developed using HTML5 and CSS3.
